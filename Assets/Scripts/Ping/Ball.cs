@@ -12,6 +12,7 @@ namespace Ping
         private AudioClip m_HitWallClip;
 
         private const float c_BallSpeed = 10f;
+        private const int c_StartDelay = 3;
 
         private List<Vector2> m_StartingVelocityVectors = new List<Vector2>()
         {
@@ -96,7 +97,8 @@ namespace Ping
             transform.position = Vector2.zero;
             m_BallRigidBody.velocity = Vector2.zero;
 
-            Invoke("SetRandomStartingVelocityVector", 2f);
+            Manager.Instance.StartCountdown(c_StartDelay);
+            Invoke("SetRandomStartingVelocityVector", c_StartDelay);
         }
 
         private void PlaySound(AudioClip audioClip)
