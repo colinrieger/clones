@@ -57,14 +57,14 @@ namespace Ping
                     break;
                 case "LeftGoal":
                     {
-                        Manager.Instance.RightScore += 1;
+                        PingManager.Instance.RightScore += 1;
                         ResetBall();
                         PlaySound(m_HitGoalClip);
                     }
                     break;
                 case "RightGoal":
                     {
-                        Manager.Instance.LeftScore += 1;
+                        PingManager.Instance.LeftScore += 1;
                         ResetBall();
                         PlaySound(m_HitGoalClip);
                     }
@@ -97,7 +97,7 @@ namespace Ping
             transform.position = Vector2.zero;
             m_BallRigidBody.velocity = Vector2.zero;
 
-            Manager.Instance.StartCountdown(c_StartDelay);
+            PingManager.Instance.StartCountdown(c_StartDelay);
             Invoke("SetRandomStartingVelocityVector", c_StartDelay);
         }
 

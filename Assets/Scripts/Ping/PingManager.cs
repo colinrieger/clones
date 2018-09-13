@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace Ping
 {
-    public class Manager : MonoBehaviour
+    public class PingManager : MonoBehaviour
     {
         public Text LeftScoreText;
         public Text RightScoreText;
@@ -13,7 +13,7 @@ namespace Ping
         public int LeftScore { get { return m_LeftScore; } set { m_LeftScore = value; LeftScoreText.text = m_LeftScore.ToString(); } }
         public int RightScore { get { return m_RightScore; } set { m_RightScore = value; RightScoreText.text = m_RightScore.ToString(); } }
 
-        public static Manager Instance { get; private set; }
+        public static PingManager Instance { get; private set; }
 
         private int m_LeftScore = 0;
         private int m_RightScore = 0;
