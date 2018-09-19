@@ -19,6 +19,7 @@ public class MainMenu : MonoBehaviour
     private List<GameData> m_GameData = new List<GameData>()
     {
         new GameData() { Title = "Ping", ImagePath = "MainMenu/ping", Scene = "Ping" },
+        new GameData() { Title = "Noodle", ImagePath = "MainMenu/noodle", Scene = "Noodle" },
     };
 
     private void Awake()

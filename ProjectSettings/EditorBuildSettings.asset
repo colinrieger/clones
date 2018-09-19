@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ping.unity
     guid: 14274bb0ab2c3d045b486a925bebb6a3
+  - enabled: 1
+    path: Assets/Scenes/Noodle.unity
+    guid: 3d6fc9eb18c62df45a38e5e682481f35
