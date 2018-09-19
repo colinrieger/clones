@@ -94,7 +94,6 @@ namespace Noodle
                     break;
                 case "Meatball":
                     m_Grow = true;
-                    NoodleManager.Instance.RandomlyPlaceMeatball(collider.gameObject.transform);
                     break;
                 default:
                     break;
