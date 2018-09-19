@@ -1104,7 +1104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39ff28b1ecc6bb14ca6cef7d781d5068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Noodle: {fileID: 1129678444}
   TopWall: {fileID: 477988063}
   BottomWall: {fileID: 1819923345}
   LeftWall: {fileID: 1802674889}

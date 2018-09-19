@@ -13,7 +13,7 @@ namespace Noodle
         private Queue<Transform> m_TailQueue = new Queue<Transform>();
         private bool m_Grow = false;
 
-        private const float m_TimeStep = .2f;
+        private const float m_TimeStep = .15f;
 
         void Start()
         {

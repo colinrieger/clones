@@ -37,13 +37,10 @@ namespace Noodle
             // if we place the meatball on a noodle tail, it will enter the trigger code (without growing) and attempt to place again
 
             gameObject.transform.localPosition = position;
-            gameObject.SetActive(true);
         }
 
         private void OnTriggerEnter2D(Collider2D collider)
         {
-            gameObject.SetActive(false);
-
             RandomlyPlace();
         }
     }
