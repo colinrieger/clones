@@ -50,9 +50,7 @@ namespace Noodle
         private void ResetNoodle()
         {
             foreach (Transform tail in m_TailQueue.ToList())
-            {
                 GameObject.Destroy(tail.gameObject);
-            }
             m_TailQueue.Clear();
             m_InputQueue.Clear();
             m_Direction = Vector3.zero;
@@ -96,6 +94,7 @@ namespace Noodle
                     break;
                 case "Meatball":
                     m_Grow = true;
+                    NoodleManager.Instance.RandomlyPlaceMeatball(collider.gameObject.transform);
                     break;
                 default:
                     break;
